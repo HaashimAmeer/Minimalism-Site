@@ -9,17 +9,29 @@ body {
   margin: 0 auto;
 }
 
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+}
+/* ============= */
+
+/* controls positions of all items inside nav-bar  */
 .container-nav {
   display: flex;
   justify-content: space-between;
 }
 
-header {
-  background-color: #f8f8f8;
-  padding: 2em 0;
+@media (max-width: 675px) {
+  .container-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
-.site-title {
+/* ============= */
+.title {
   font-family: "Lora", serif;
   font-weight: 400;
   font-size: 2rem;
@@ -34,6 +46,13 @@ header {
   font-size: 0.75rem;
 }
 
+@media (max-width: 675px) {
+  header {
+    text-align: center;
+  }
+}
+/* ============= */
+
 /* handles ul container for each list item */
 .nav-list {
   list-style: none;
@@ -43,15 +62,31 @@ header {
   justify-content: center;
 }
 
+@media (max-width: 675px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* ============= */
+
 /* handles each li as a whole */
 .nav-list-item a {
   margin-left: 2em;
+}
+
+@media (max-width: 675px) {
+  .nav-list-item {
+    margin-bottom: 0.5em;
+  }
 }
 
 .nav-list-item a:hover,
 .nav-list-item a:focus {
   color: #1792d2;
 }
+/* ============= */
 
 /* handles link styling within each li */
 .nav-list-item a {
