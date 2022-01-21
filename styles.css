@@ -1,0 +1,59 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 2em 0;
+}
+
+.site-title {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #143774;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #1792d2;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+/* handles ul container for each list item */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* handles each li as a whole */
+.nav-list-item a {
+  margin: 1em;
+}
+
+.nav-list-item a:hover,
+.nav-list-item a:focus {
+  color: #1792d2;
+}
+
+/* handles link styling within each li */
+.nav-list-item a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.15em 0;
+}
+
+.current-page {
+  border-bottom: #707070 solid 1px;
+}
+/* .current-page:hover {
+  color: #707070;
+} */
